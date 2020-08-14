@@ -1,0 +1,143 @@
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ranga", cursive;
+}
+
+.js-clock .js-title {
+  font-size: 200px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.form input {
+  border-radius: 10px;
+  width: 180px;
+  height: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.form input::placeholder {
+  font-size: 13px;
+}
+
+h4 {
+  font-size: 50px;
+  color: white;
+}
+
+.js-toDoForm input {
+  margin-top: 50px;
+  width: 150px;
+  height: 20px;
+  border: none;
+  background: none;
+  border-bottom: 3px solid white;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  color: white;
+  font-size: 30px;
+  font-family: "Ranga", cursive;
+}
+
+.js-toDoForm input::placeholder {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+.js-toDoForm input:focus {
+  background: none;
+  outline: none;
+  width: 400px;
+  height: 25px;
+
+  transform: translate(0, -8px);
+  transition: all 0.4s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+ul li input {
+  margin-right: 18px;
+  opacity: 0.5;
+}
+
+ul li button {
+  margin-left: 18px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+ul li button:hover {
+  cursor: pointer;
+}
+
+.js-greeting {
+  margin: 0;
+}
+
+.js-weather {
+  background-color: gray;
+  padding: 5px 5px;
+  opacity: 0.7;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
